@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+     android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/vmessage_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/s_msg_bg"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textColor="#04DE0D"
+        android:maxWidth="350dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="14dp"
+        android:text="Hii i am speaker"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leftdraw"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@id/vmessage_body"
+        app:layout_constraintTop_toTopOf="@id/vmessage_body"/>
+
+    <TextView
+        android:id="@+id/message_body"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vmessage_body"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/u_msg_bg"
+        android:text="Hii I am writer |"
+        android:paddingStart="7dp"
+        android:paddingEnd="10dp"
+        android:scrollHorizontally="false"
+        android:textColor="#FF9F0A"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vmessage_body" />
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="10dp"
+        android:layout_height="8dp"
+        android:src="@drawable/rightdraw"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@id/message_body"
+        app:layout_constraintTop_toTopOf="@id/message_body"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--old text color #FA114F-->
